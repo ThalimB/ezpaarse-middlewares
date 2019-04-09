@@ -436,7 +436,7 @@ module.exports = function () {
   function querySameHal(identifiant) {
     report.inc('general', 'same-queries');
 
-    let search = `halIdSameAs_s:${identifiant})`;
+    let search = `halIdSameAs_s:${identifiant}`;
 
     return new Promise((resolve, reject) => {
       const opts = {
